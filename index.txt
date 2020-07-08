@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chessboard</title>
+	<meta charset="utf-8">
+	<script>
+		function chess()
+		{
+			var col=document.getElementById("c").value;
+			document.getElementById("bgc").style.background=col;
+			
+			
+		}
+	</script>
+	<style type="text/css">
+	.a{
+				background: grey;
+			}
+	table{
+			background: black;
+			}
+	body{
+		background:white;
+		height:800px;
+		position: absolute;
+
+	}
+	header{
+		height: 100px;
+		margin-top: 100px;
+		margin-left: 500px;
+	}
+	main{
+		height: 400px;
+		width: 100%;
+	}
+	section	{
+			position: absolute;
+			left:430px;
+			width: 400px;
+			height: 425px;
+		}
+	table{
+		align-self: center;
+		border-collapse: collapse;
+		border-left:solid 1px orange; 
+		border-right:solid 1px orange; 
+		border-top:solid 1px orange;
+		border-bottom:solid 1px orange; 
+	}
+	td{
+		height: 50px;
+		width: 50px;	
+	}
+		
+	</style>
+</head>
+<body>
+	<header>
+		Select a color from drop-down list<br><br>
+		<span>
+		  <select id="c" >
+          		<option name="color" value="red" >RED</option>
+          		<option  name="color" value="white" >WHITE</option>
+          		<option  name="color" value="green" >GREEN</option>
+          		<option  name="color" value="blue" >BLUE</option>
+          		<option  name="color" value="yellow" >YELLOW</option>
+          		<option  name="color" value="orange" >ORANGE</option>
+          		<option  name="color" value="purple" >PURPLE</option>
+          </select>
+          <button type="submit" name="submit" onclick="chess();">submit</button>
+      </span>
+	</header>
+	<main >
+		<section>
+			<table  border-colapse="colapse" id="bgc">
+				<tr><td class="a"><td ><td class="a"><td ><td class="a"><td ><td class="a"><td >
+				<tr><td ><td class="a"><td ><td class="a"><td ><td class="a"><td><td class="a">
+				<tr><td class="a"><td ><td class="a"><td ><td class="a"><td ><td class="a"><td >
+				<tr><td ><td class="a"><td ><td class="a"><td ><td class="a"><td><td class="a">
+				<tr><td class="a"><td ><td class="a"><td ><td class="a"><td ><td class="a"><td >
+				<tr><td ><td class="a"><td ><td class="a"><td ><td class="a"><td><td class="a">
+				<tr><td class="a"><td ><td class="a"><td ><td class="a"><td ><td class="a"><td >
+				<tr><td ><td class="a"><td ><td class="a"><td ><td class="a"><td><td class="a">
+
+			</table>
+		</section>
+	</main>
+</body>
+</html>
